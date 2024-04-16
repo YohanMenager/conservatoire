@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.leo.projet_conservatoire.MenuController">
+   <children>
+      <Label layoutX="78.0" layoutY="87.0" onMousePressed="#Horaire" text="Horaires" />
+      <Label layoutX="61.0" layoutY="142.0" onMousePressed="#saisiePartition" text="Saisie partition" />
+      <Label layoutX="49.0" layoutY="197.0" onMousePressed="#recherchePartition" text="Recherche partition" />
+      <Label layoutX="82.0" layoutY="243.0" onMousePressed="#Quitter" text="Quitter" />
+      <Label fx:id="nom" layoutX="86.0" layoutY="50.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.3394648829431438" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.leo.projet_conservatoire.PartitionsInstrumentController">
+  <items>
+      <SplitPane dividerPositions="0.27386934673366836" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+        <items>
+            <fx:include source="logo.fxml" />
+            <fx:include source="menu.fxml" />
+        </items>
+      </SplitPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Liste des partitions pour votre instrument" underline="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TableView fx:id="liste" layoutX="-4.0" layoutY="42.0" prefHeight="200.0" prefWidth="398.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="id" visible="false" />
+                <TableColumn fx:id="colNom" prefWidth="197.0" text="Partition" />
+                  <TableColumn fx:id="colAuteur" prefWidth="200.0" text="Auteur" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtPage" layoutX="23.0" layoutY="267.0" />
+            <Label layoutX="23.0" layoutY="250.0" text="ajouter au classeur à la page :" />
+            <Button layoutX="197.0" layoutY="267.0" mnemonicParsing="false" onAction="#ajoutClasseur" text="Valider" />
+            <Label layoutX="23.0" layoutY="309.0" text="ajouter une nouvelle partition" />
+            <TextField fx:id="txtTitrePartition" layoutX="23.0" layoutY="326.0" promptText="Titre de la partition" />
+            <TextField fx:id="txtNomAuteur" layoutX="23.0" layoutY="359.0" promptText="Nom de l'auteur" />
+            <Button layoutX="198.0" layoutY="359.0" mnemonicParsing="false" onAction="#ajoutPartition" text="Valider" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

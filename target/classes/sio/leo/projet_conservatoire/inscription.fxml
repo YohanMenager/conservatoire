@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="sio.leo.projet_conservatoire.InscriptionController">
+   <children>
+      <Label layoutX="247.0" layoutY="14.0" text="Inscription" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNom" layoutX="226.0" layoutY="61.0" />
+      <TextField fx:id="txtPrenom" layoutX="226.0" layoutY="99.0" />
+      <Label layoutX="149.0" layoutY="61.0" text="nom" />
+      <Label layoutX="148.0" layoutY="99.0" text="prénom" />
+      <ComboBox fx:id="cbbCycle" layoutX="226.0" layoutY="138.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbbAnnee" layoutX="225.0" layoutY="175.0" prefWidth="150.0" />
+      <Label layoutX="148.0" layoutY="138.0" text="cycle" />
+      <Label layoutX="148.0" layoutY="175.0" text="année" />
+      <ComboBox fx:id="cbbDis" layoutX="226.0" layoutY="219.0" prefWidth="150.0" />
+      <Label layoutX="148.0" layoutY="219.0" text="discipline" />
+      <TextField fx:id="txtLogin" layoutX="226.0" layoutY="266.0" />
+      <Label layoutX="148.0" layoutY="266.0" text="login" />
+      <Label layoutX="148.0" layoutY="301.0" text="mot de passe" />
+      <PasswordField fx:id="pwdMdp" layoutX="226.0" layoutY="306.0" />
+      <PasswordField fx:id="pwdConfirme" layoutX="388.0" layoutY="306.0" prefHeight="25.0" prefWidth="163.0" promptText="confirmer le mot de passe" />
+      <Button layoutX="274.0" layoutY="348.0" mnemonicParsing="false" onAction="#inscription" text="Valider" />
+      <Button layoutX="34.0" layoutY="36.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+   </children>
+</AnchorPane>

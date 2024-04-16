@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.2625418060200669" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+  <items>
+      <SplitPane dividerPositions="0.27386934673366836" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+        <items>
+            <fx:include source="logo.fxml" />
+            <fx:include source="menu.fxml" />
+        </items>
+      </SplitPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="158.0" layoutY="78.0" text="Lundi : 8h-17h" />
+            <Label layoutX="157.0" layoutY="115.0" text="Mardi : 8h-17h" />
+            <Label layoutX="149.0" layoutY="149.0" text="Mercredi : 8h-17h" />
+            <Label layoutX="160.0" layoutY="182.0" text="jeudi : 8h-17h" />
+            <Label layoutX="149.0" layoutY="214.0" text="Vendredi : 8h-17h" />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>
